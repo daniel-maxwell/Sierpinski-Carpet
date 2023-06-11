@@ -12,8 +12,10 @@ function draw() {
     var locX = map(nX, 0, 1, 0, width);
     var g = map(nX, 0 , 1, 0, 255);
 
+    var locY = map(nX, 0, 1, 0, height);
+
     var rotZ = map(nX, 0, 1, -25, 25);
-    translate(locX, height/2);
+    translate(locX, locY);
     rotate(rotZ);
     fill(0, g, 0);
     rect(0, 0, 100, 100);
