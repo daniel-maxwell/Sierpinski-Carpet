@@ -12,7 +12,8 @@ function draw() {
     var locX = map(nX, 0, 1, 0, width);
     var g = map(nX, 0 , 1, 0, 255);
 
-    var locY = map(nX, 0, 1, 0, height);
+    var nY = noise(time + 5);
+    var locY = map(nY, 0, 1, 0, height);
 
     var rotZ = map(nX, 0, 1, -25, 25);
     translate(locX, locY);
